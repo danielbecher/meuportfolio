@@ -1,0 +1,6 @@
+#Faz o deploy do site na home do diretório public_html/
+
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/example/public_html/
+    - /bin/cp -R images $DEPLOYPATH
