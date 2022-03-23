@@ -149,13 +149,13 @@
     <section class="experiencias">
         <h2 class="titulos-pagina" id="xp">Experiência Profissional</h2>
         <div class="experiencia">
-            <img class="experiencia__imagem" src="./assets/img/codigo-secreto.png">
+            <img class="experiencia__imagem" src="./assets/img/pyticket.jpg">
             <div class="experiencia__sobre">
-                <h2 class="experiencia__sobre___titulo">Decodificador de mensagens</h2>
-                <h3 class="experiencia__sobre___descricao">Primeiro Challenge da Formação ONE </h3>
+                <h2 class="experiencia__sobre___titulo">PyTicket</h2>
+                <h3 class="experiencia__sobre___descricao">Sistema de chamados em Python + Django </h3>
                 <ul class="experiencia__sobre__lista">
-                    <li class="experiencia__sobre___itens"><a class="experiencia__link--repo" href="https://github.com/danielbecher/danielbecher.github.io/tree/main/jogodaforca"><button class="experiencia__botao--repo">Repositório</button></a></li>
-                    <li class="experiencia__sobre___itens"><a class="experiencia__link--demo" href="https://danielbecher.github.io/jogodaforca/"><button class="experiencia__botao--demo">Ver demo</button></a></li>
+                    <li class="experiencia__sobre___itens"><a class="experiencia__link--repo" href="https://github.com/danielbecher/pyticket"><button class="experiencia__botao--repo">Repositório</button></a></li>
+                    <li class="experiencia__sobre___itens"><a class="experiencia__link--demo" href="https://pyticket.becher.com.br/"><button class="experiencia__botao--demo">Ver demo</button></a></li>
                 </ul>
             </div>
         </div>    
@@ -197,17 +197,32 @@
 
     <section class="formcontato">
         <div id="contato" class="contato">
-            <img class="contato__imagem" src="./assets/img/contato.png">
+            <div class="contato__redes">
+                <h3 class="contato__subtitulo">Você também pode manter contato aqui:</h3>
+                <ul class="contato__redes--lista">
+                    <li class="contato__redes--item"><a href="https://www.linkedin.com/in/danielbecher/"><img class="contato__imagem" src="./assets/img/linkedin.png"></a></li>
+                    <li class="contato__redes--item"><a href="https://github.com/danielbecher"><img class="contato__imagem" src="./assets/img/github.png"></a>"</li>
+                    <li class="contato__redes--item"><a href="https://instagram.com/daniel.becher"><img class="contato__imagem" src="./assets/img/instagram.png"></a></li>
+                    <li class="contato__redes--item"><a href="https://twitter.com/becher"><img class="contato__imagem" src="./assets/img/twitter.png"></a></li>
+                    <li class="contato__redes--item"><a href="https://www.facebook.com/odanielbecher/"><img class="contato__imagem" src="./assets/img/facebook.png"></a></li>
+                </ul>
+            </div>
             <div class="contato__sobre">
                 <h2 class="contato__titulo">Contato</h2>
-                <h3 class="contato__descricao">Quer entrar em contato comigo?</h3>
-                <h3 class="contato__descricao">Preencha o formulário ao lado e entrarei em contato o mais rápido possível. </h3>
-                <form class="formulario">
-                    <input class="contato__input" type="text" id="nome" placeholder="Nome">
-                    <input class="contato__input" type="text" id="email" placeholder="E-mail">
-                    <input class="contato__input" type="text" id="assunto" placeholder="Assunto">
-                    <textarea class="contato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem"></textarea>
-                    <button class="contato__botao">Enviar mensagem</button>
+                <form action="#" class="formulario">
+                        <div class="input-container">
+                            <input class="contato__input" type="text" name="nome" id="nome" placeholder="Nome" data-tipo="nome">
+                        </div>
+                           <div class="input-container">
+                           <input class="contato__input" type="text" name="email" id="email" placeholder="E-mail" data-tipo="email">
+                        </div>
+                          <div class="input-container">
+                          <input class="contato__input" type="text" name="assunto" id="assunto" placeholder="Assunto" data-tipo="assunto">     
+                        </div>
+                          <div class="input-container">
+                          <textarea class="contato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem" data-tipo="mensagem"></textarea>
+                        </div>
+                        <button class="contato__botao" name="enviar" disabled="True">Enviar mensagem</button>
                 </form>
             </div>
         </div>
@@ -219,5 +234,6 @@
             <p>2022</p>
         </div>
     </section>
+    <script src="assets/js/valida.js" type="module"></script>
 </body>
 </html>
