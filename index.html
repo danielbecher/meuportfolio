@@ -38,7 +38,7 @@
                     <li class="titulo-lista-item"><a href="./assets/docs/Curriculum_Vitae_-_Daniel_Becher.pdf">Curriculo</a></li>
                 </ul>
             </div>
-            <img class="foto-perfil" src="./assets/img/foto.jpg">
+            <img class="foto__perfil" src="./assets/img/foto.jpg">
         </div>
     </section>
 
@@ -196,26 +196,36 @@
     </section>
 
     <section class="formcontato">
+        <div id="contato" class="contato">
             <div class="contato__redes">
                 <h3 class="contato__subtitulo">Você também pode manter contato aqui:</h3>
                 <ul class="contato__redes--lista">
-                    <li class="contato__redes--item"><a href="https://www.linkedin.com/in/danielbecher/"><img class="contato__imagem" src="./assets/img/linkedin.png" alt="Linkedin Daniel Becher"></a></li>
-                    <li class="contato__redes--item"><a href="https://github.com/danielbecher"><img class="contato__imagem" src="./assets/img/github.png" alt="Github Daniel Becher"></a></li>
-                    <li class="contato__redes--item"><a href="https://instagram.com/daniel.becher"><img class="contato__imagem" src="./assets/img/instagram.png" alt="Instagram Daniel Becher"></a></li>
-                    <li class="contato__redes--item"><a href="https://twitter.com/becher"><img class="contato__imagem" src="./assets/img/twitter.png" alt="Twitter Daniel Becher"></a></li>
-                    <li class="contato__redes--item"><a href="https://www.facebook.com/odanielbecher/"><img class="contato__imagem" src="./assets/img/facebook.png" alt="Facebook Daniel Becher"></a></li>
+                    <li class="contato__redes--item"><a href="https://www.linkedin.com/in/danielbecher/"><img class="contato__imagem" src="./assets/img/linkedin.png"></a></li>
+                    <li class="contato__redes--item"><a href="https://github.com/danielbecher"><img class="contato__imagem" src="./assets/img/github.png"></a>"</li>
+                    <li class="contato__redes--item"><a href="https://instagram.com/daniel.becher"><img class="contato__imagem" src="./assets/img/instagram.png"></a></li>
+                    <li class="contato__redes--item"><a href="https://twitter.com/becher"><img class="contato__imagem" src="./assets/img/twitter.png"></a></li>
+                    <li class="contato__redes--item"><a href="https://www.facebook.com/odanielbecher/"><img class="contato__imagem" src="./assets/img/facebook.png"></a></li>
                 </ul>
             </div>
             <div class="contato__sobre">
                 <h2 class="contato__titulo">Contato</h2>
                 <form action="#" class="formulario">
-                    <input class="contato__input" type="text" name="nome" id="nome" placeholder="Nome" data-tipo="nome">                                         
-                    <input class="contato__input" type="text" name="email" id="email" placeholder="E-mail" data-tipo="email">                
-                    <input class="contato__input" type="text" name="assunto" id="assunto" placeholder="Assunto" data-tipo="assunto">     
-                    <textarea class="contato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem" data-tipo="mensagem"></textarea>                        
-                    <button class="contato__botao" name="enviar" disabled="True">Enviar mensagem</button>
+                        <div class="input-container">
+                            <input class="contato__input" type="text" name="nome" id="nome" placeholder="Nome" data-tipo="nome">
+                        </div>
+                           <div class="input-container">
+                           <input class="contato__input" type="text" name="email" id="email" placeholder="E-mail" data-tipo="email">
+                        </div>
+                          <div class="input-container">
+                          <input class="contato__input" type="text" name="assunto" id="assunto" placeholder="Assunto" data-tipo="assunto">     
+                        </div>
+                          <div class="input-container">
+                          <textarea class="contato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem" data-tipo="mensagem"></textarea>
+                        </div>
+                        <button class="contato__botao" name="enviar" disabled="True">Enviar mensagem</button>
                 </form>
             </div>
+        </div>
     </section>
 
     <section class="footer">
