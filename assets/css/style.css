@@ -1,123 +1,125 @@
-body {
-    font-family: 'Raleway', sans-serif;
-    background-color: #F5F5F5;
-    width: 70%;
-	margin: 0 auto;
+@media screen and (min-width: 0){
+    body {
+        font-family: 'Raleway', sans-serif;
+        background-color: #F5F5F5;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    ul {
+        padding-inline-start: 0;
+    }
+
+    li {
+        list-style-type: none;
+        padding-right: 20px;
+    }
+
+    h2 {
+        font-size: 32px;
+        text-align: left;
+    }
+
+    .menu-lista-item a {
+        color: #333;
+        text-decoration: none;
+    }
+
+    .menu-lista-item a:hover {
+        font-size: 18px;
+        text-decoration: underline;
+    }
+
+    .menu-titulo {
+        font-size: 20px;
+    }
+
+    .about, .cursossection {
+        background-color: #EAF2FD;
+        height: auto;
+        padding: 30px 40px;
+    }
+
+    .titulo {
+        margin: 60px auto;
+    }
+
+    .titulo-pagina {
+        width: 95%;
+    }
+
+    .subtitulo-pagina {
+        width: 98%;
+    }
+
+    .titulos-pagina {
+        text-align: center;
+    }
+
+    .sobremim, .cursos {
+        text-align: left;
+    }
+
+    .titulo li {
+        font-size: 22px;
+    }
+
+    .titulo-lista-item a {
+        color: #333;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .titulo-lista-item a:hover {
+        font-size: 18px;
+        text-decoration: underline;
+    }
+
+    .titulo-lista-item:after {
+        content: url('../../assets/img/seta.png')
+    }
+
+    .projeto-sobre {
+        background-color: #5E9EDC;
+        padding: 25px 0;
+    }
+
+    .projeto-sobre .container {
+        color: #FFF;
+    }
+
+    .projeto-sobre-sobre {
+        font-size: 1.3em;
+        line-height: 2;
+    }
+
+    .rodape {
+        color: #333;
+        text-transform: lowercase;
+        text-align: center;
+    }
+
+    .titulo h2 {
+        font-size: 20px;
+    }
+
+    .titulo h3 {
+        font-size: 16px;
+    }
+
+    .titulo-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foto__perfil {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
 }
 
-ul {
-    padding-inline-start: 0;
-}
-
-li {
-    list-style-type: none;
-    padding-right: 20px;
-}
-
-h2 {
-    font-size: 32px;
-    text-align: left;
-}
-
-.menu-lista-item a {
-    color: #333;
-    text-decoration: none;
-}
-
-.menu-lista-item a:hover {
-    font-size: 18px;
-    text-decoration: underline;
-}
-
-.menu-titulo {
-    font-size: 20px;
-}
-
-.about, .cursossection {
-    background-color: #EAF2FD;
-    height: auto;
-    padding: 30px 40px;
-}
-
-.titulo {
-    margin: 60px auto;
-}
-
-.titulo-pagina {
-    width: 95%;
-}
-
-.subtitulo-pagina {
-    width: 98%;
-}
-
-.titulos-pagina {
-    text-align: center;
-}
-
-.sobremim, .cursos {
-    text-align: left;
-}
-
-.titulo li {
-    font-size: 22px;
-}
-
-.titulo-lista-item a {
-    color: #333;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.titulo-lista-item a:hover {
-    font-size: 18px;
-    text-decoration: underline;
-}
-
-.titulo-lista-item:after {
-    content: url('../../assets/img/seta.png')
-}
-
-.projeto-sobre {
-	background-color: #5E9EDC;
-	padding: 25px 0;
-}
-
-.projeto-sobre .container {
-	color: #FFF;
-}
-
-.projeto-sobre-sobre {
-	font-size: 1.3em;
-	line-height: 2;
-}
-
-.rodape {
-    color: #333;
-    text-transform: lowercase;
-    text-align: center;
-}
-
-.titulo h2 {
-    font-size: 20px;
-}
-
-.titulo h3 {
-    font-size: 16px;
-}
-
-.titulo-div {
-    display: flex;
-    flex-direction: column;
-}
-
-.foto__perfil {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
-
-@media (min-width: 768px) {
+@media screen and (min-width: 1024px) {
     .menu-titulo:before {
         content: url("../../assets/img/star.png");
     }
