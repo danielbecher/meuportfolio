@@ -111,7 +111,13 @@ h2 {
     flex-direction: column;
 }
 
-@media screen and (min-width: 450px) {
+.foto__perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+@media (min-width: 768px) {
     .menu-titulo:before {
         content: url("../../assets/img/star.png");
     }
