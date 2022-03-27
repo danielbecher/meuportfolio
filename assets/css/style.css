@@ -20,18 +20,38 @@
         text-align: left;
     }
 
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-lista {
+        display: flex;
+        flex-direction: column;
+    }
+
     .menu-lista-item a {
         color: #333;
         text-decoration: none;
+        font-size: 25px;
     }
 
     .menu-lista-item a:hover {
-        font-size: 18px;
+        font-size: 25px;
         text-decoration: underline;
     }
 
     .menu-titulo {
         font-size: 20px;
+    }
+
+    .menu-titulo a {
+        text-decoration: none;
+        font-size: 22px;
+    }
+
+    .menu-titulo a:hover{
+        text-decoration: underline;
     }
 
     .about, .cursossection {
@@ -64,14 +84,19 @@
         font-size: 22px;
     }
 
+    .titulo-lista {
+        display: flex;
+        justify-content: center;
+    }
+
     .titulo-lista-item a {
         color: #333;
         text-decoration: none;
-        font-size: 14px;
+        font-size: 30px;
     }
 
     .titulo-lista-item a:hover {
-        font-size: 18px;
+        font-size: 30px;
         text-decoration: underline;
     }
 
@@ -100,11 +125,13 @@
     }
 
     .titulo h2 {
-        font-size: 20px;
+        font-size: 28px;
+        text-align: justify;
     }
 
     .titulo h3 {
-        font-size: 16px;
+        font-size: 20px;
+        text-align: justify;
     }
 
     .titulo-div {
@@ -113,9 +140,10 @@
     }
 
     .foto__perfil {
-        width: 150px;
-        height: 150px;
+        width: 250px;
+        height: 250px;
         border-radius: 50%;
+        margin-top: 55px;
     }
 }
 
@@ -123,6 +151,37 @@
     .menu-titulo:before {
         content: url("../../assets/img/star.png");
     }
+
+    .menu-titulo a {
+        text-decoration: none;
+        font-size: 22px;
+    }
+
+    .menu-titulo a:hover{
+        text-decoration: underline;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu-lista {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu-lista-item a {
+        color: #333;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .menu-lista-item a:hover {
+        font-size: 16px;
+        text-decoration: underline;
+    }
+    
     .foto__perfil {
         width: 368px;
         height: 368px;
@@ -130,15 +189,26 @@
     }
 
     .titulo h2 {
-        font-size: 52px;
+        font-size: 35px;
     }
     
     .titulo h3 {
-        font-size: 24px;
+        font-size: 20px;
     }  
 
     .titulo-div {
         display: flex;
         flex-direction: row;
+    }
+
+    .titulo-lista-item a {
+        color: #333;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .titulo-lista-item a:hover {
+        font-size: 18px;
+        text-decoration: underline;
     }
 }
