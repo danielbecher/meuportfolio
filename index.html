@@ -1,239 +1,65 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/flexbox.css">
-    <link rel="stylesheet" href="assets/css/skills.css">
-    <link rel="stylesheet" href="assets/css/experiencia.css">
-    <link rel="stylesheet" href="assets/css/contato.css">
-    <title>Portfolio - Daniel Becher</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/sass/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+    <title>Daniel Becher - Portfolio</title>
 </head>
+
 <body>
-    
-    <section class="menu">
-        <h1 class="menu-titulo"><a class="titulo-site" href="index.html">Daniel Clóvis Becher</a></h1>
-        <nav>
-            <ul class="menu-lista">
-                <li class="menu-lista-item"><a href="#sobremim">Sobre mim</a></li>
-                <li class="menu-lista-item"><a href="#skills">Skills</a></li>
-                <li class="menu-lista-item"><a href="#hobbies">Hobbies</a></li>
-                <li class="menu-lista-item"><a href="#formacao">Formações e Cursos</a></li>
-                <li class="menu-lista-item"><a href="#xp">Experiência</a></li>
-                <li class="menu-lista-item"><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </section>
+    <div class="container">
 
-    <section class="titulo">
-        <div class="titulo-div">
-            <div class="titulo-container" id="#sobremim">
-                <h2 class="titulo-pagina">Olá! Meu nome é Daniel Becher e este é o meu portfólio!</h2>
-                <h3 class="subtitulo-pagina">Estou cursando Análise e Desenvolvimento de Sistemas e participando da Formação ONE na Alura.</h3>
-                <ul class="titulo-lista">
-                    <li class="titulo-lista-item"><a href="https://github.com/danielbecher">Github</a></li>
-                    <li class="titulo-lista-item"><a href="https://linkedin.com/in/danielbecher">Linkedin</a></li>
-                    <li class="titulo-lista-item"><a href="https://www.instagram.com/daniel.becher">Instagram</a></li>
-                    <li class="titulo-lista-item"><a href="./assets/docs/Curriculum_Vitae_-_Daniel_Becher.pdf">Curriculo</a></li>
+        <header>
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/danielbecher/">LinkedIn</a></li>
+                    <li><a href="https://github.com/danielbecher">Portfolio</a></li>
+                    <li><a href="https://www.becher.com.br/assets/docs/Curriculum_Vitae_-_Daniel_Becher.pdf">Curriculum</a></li>
+                    <li><a href="">Manda Zap</a></li>
                 </ul>
-            </div>
-            <img class="foto__perfil" src="./assets/img/foto.jpg">
-        </div>
-    </section>
+            </nav>
+        </header>
 
-    <section class="about">
-        <h2 class="sobremim">Sobre mim</h2>
-        <p>Meu nome é Daniel, moro em São José - SC, tenho 38 anos e há 20 eu trabalho com TI. Trabalho atualmente com hospedagem de sites (criei uma pequena empresa em 2009) e sou Gerente de TI em outra, no ramo de engenharia rodoviária. E no ano em que minha carreira completa duas décadas, pretendo começar uma transição para a área do desenvolvimento. Para que isso aconteça, atuo em três diferentes frentes: estou cursando Tecnlógo EAD de Análise e Desenvolvimento de Sistemas na Universidade Cruzeiro do Sul, fazendo a Formação One (One Next Education), parceria da Oracle com a Alura e estudando, quando sobra tempo, o stack Python + Django + Django Rest Framework.</p>
-    </section>
+        <main>
+            <div class="main__box">
+                <div class="main__subox">
+                    <h2>Daniel Becher</h2>
+                    <p>Webhost e DEV Front-end</p>
+                    <div class="main__subox-icons">
+                        <ul>
+                            <li><img src="img/html.png" alt="HTML 5"></li>
+                            <li><img src="img/css.png" alt="CSS 3"></li>
+                            <li><img src="img/javascript.png" alt="JavaScript"></li>
+                            <li><img src="img/nodejs.png" alt="NodeJS"></li>
+                            <li><img src="img/vtex.png" alt="VTEX"></li>
+                            <li><img src="img/python.png" alt="Python"></li>
+                            <li><img src="img/git.png" alt="Git"></li>
+                            <li><img src="img/cpanel.png" alt="cPanel"></li>
+                        </ul>
+                    </div>
+                </div>
+                <img src="img/foto.jpg" alt="Daniel Becher">
+            </div>            
+            <div class="main__box">
+                <p class="">Este é um pequeno cartão de visitas pra que o domínio não te dê um Forbidden 403 na sua face com alguns links úteis caso você queira saber mais sobre minha vida profissional e entrar em contato.</p>
+            </div>
+        </main>
 
-    <section class="skillssection">
-        <h2 class="titulos-pagina" id="skills">Skills</h2>
-        <div class="skills">
-            <div class="skills_item caixa">
-                <ul class="skills_lista">
-                    <li class="skills_imagem"> <img src="./assets/img/html5.png"></li>
-                    <li class="skills_titulo"><h4>HTML 5</h4></li>
-                </ul>
-            </div>
-            <div class="skills_item caixa">
-                <ul class="skills_lista">
-                    <li class="skills_imagem"><img src="./assets/img/css3.png"></li>
-                    <li class="skills_titulo"><h4>CSS 3</h4></li>
-                </ul>
-            </div>
-            <div class="skills_item caixa">
-                <ul class="skills_lista">
-                    <li class="skills_imagem"><img src="./assets/img/javascript.png"></li>
-                    <li class="skills_titulo"><h4>Javascript</h4></li>
-                </ul>
-            </div>
-            <div class="skills_item caixa">
-                <ul class="skills_lista">
-                    <li class="skills_imagem"><img src="./assets/img/python.png"></li>
-                    <li class="skills_titulo"><h4>Python</h4></li>
-                </ul>
-            </div>
-            <div class="skills_item caixa">
-                <ul class="skills_lista">
-                    <li class="skills_imagem"><img src="./assets/img/mysql.png"></li>
-                    <li class="skills_titulo"><h4>MySQL</h4></li>
-                </ul>
-            </div>
-        </div>
-    </section>
+        <footer>
 
-    <section class="hobbiessection" id="hobbies">
-        <h2 class="titulos-pagina">Hobbies</h2>
-        <div class="hobbies">
-            <div class="hobbies_item caixa">
-                <ul class="hobbies_lista">
-                    <li class="hobbies_imagem"> <img src="./assets/img/cooking.png"></li>
-                    <li class="hobbies_titulo"><h4>Cozinhar</h4></li>
-                </ul>
-            </div>
-            <div class="hobbies_item caixa">
-                <ul class="hobbies_lista">
-                    <li class="hobbies_imagem"><img src="./assets/img/tvseries.png"></li>
-                    <li class="hobbies_titulo"><h4>Assistir séries</h4></li>
-                </ul>
-            </div>
-            <div class="hobbies_item caixa">
-                <ul class="hobbies_lista">
-                    <li class="hobbies_imagem"><img src="./assets/img/music.png"></li>
-                    <li class="hobbies_titulo"><h4>Ouvir música</h4></li>
-                </ul>
-            </div>
-            <div class="hobbies_item caixa">
-                <ul class="hobbies_lista">
-                    <li class="hobbies_imagem"><img src="./assets/img/games.png"></li>
-                    <li class="hobbies_titulo"><h4>Jogar Online</h4></li>
-                </ul>
-            </div>
-            <div class="hobbies_item caixa">
-                <ul class="hobbies_lista">
-                    <li class="hobbies_imagem"><img src="./assets/img/fishing.png"></li>
-                    <li class="hobbies_titulo"><h4>Pescar</h4></li>
-                </ul>
-            </div>
-        </div>
-    </section>
+            <a href="https://api.whatsapp.com/send?phone=5548999259000&text=Oi, tudo bem? Entro em contato a partir do seu site!" target="_blank">
+                <svg class="botao-zap" enable-background="new 0 0 512 512" width="50" height="50" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#4CAF50"/><path d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z" fill="#FAFAFA"/></svg>
+            </a>
+            
+        </footer>
 
-    <section class="cursossection">
-        <h2 class="titulos-pagina" id="formacao">Formação acadêmica</h2>
-        <div class="cursos">
-            <div class="cursos_item caixa">
-                <ul class="cursos_lista">
-                    <li class="cursos_imagem"><img src="./assets/img/cruzeiro.png"></li>
-                    <li class="cursos_titulo"><h4>Análise e Desenvolvimento de Sistemas</h4></li>
-                    <li class="cursos_subtitulo"><p>CRUZEIRO DO SUL - 2024</p></li>
-                </ul>
-            </div>
-            <div class="cursos_item caixa">
-                <ul class="cursos_lista">
-                    <li class="cursos_imagem"><img src="./assets/img/alura.png"></li>
-                    <li class="cursos_titulo"><h4>Formação ONE</h4></li>
-                    <li class="cursos_subtitulo"><p>ALURA - 2022</p></li>
-                </ul>
-            </div>
-            <div class="cursos_item caixa">
-                <ul class="cursos_lista">
-                    <li class="cursos_imagem"><img src="./assets/img/dsa.png"></li>
-                    <li class="cursos_titulo"><h4>Python para Análise de Dados</h4></li>
-                    <li class="cursos_subtitulo"><p>DSA - 2021</p></li>
-                </ul>
-            </div>
-        </div>
-    </section>
+    </div>
 
-    <section class="experiencias">
-        <h2 class="titulos-pagina" id="xp">Experiência Profissional</h2>
-        <div class="experiencia">
-            <img class="experiencia__imagem" src="./assets/img/pyticket.jpg">
-            <div class="experiencia__sobre">
-                <h2 class="experiencia__sobre___titulo">PyTicket</h2>
-                <h3 class="experiencia__sobre___descricao">Sistema de chamados em Python + Django </h3>
-                <ul class="experiencia__sobre__lista">
-                    <li class="experiencia__sobre___itens"><a class="experiencia__link--repo" href="https://github.com/danielbecher/pyticket"><button class="experiencia__botao--repo">Repositório</button></a></li>
-                    <li class="experiencia__sobre___itens"><a class="experiencia__link--demo" href="https://pyticket.becher.com.br/"><button class="experiencia__botao--demo">Ver demo</button></a></li>
-                </ul>
-            </div>
-        </div>    
-        <div class="experiencia">
-            <div class="experiencia__sobre">
-                <h2 class="experiencia__sobre___titulo">Jogo da Forca</h2>
-                <h3 class="experiencia__sobre___descricao">Segundo Challenge da Formação ONE </h3>
-                <ul class="experiencia__sobre__lista">
-                    <li class="experiencia__sobre___itens"><a class="experiencia__link--repo" href="https://github.com/danielbecher/danielbecher.github.io/tree/main/jogodaforca"><button class="experiencia__botao--repo">Repositório</button></a></li>
-                    <li class="experiencia__sobre___itens"><a class="experiencia__link--demo" href="https://danielbecher.github.io/jogodaforca/"><button class="experiencia__botao--demo">Ver demo</button></a></li>
-                </ul>
-            </div>
-            <img class="experiencia__imagem" src="./assets/img/jogodaforca.png">
-        </div>
-        <div class="experiencia">
-            <img class="experiencia__imagem" src="./assets/img/correios.jpg">
-            <div class="experiencia__sobre">
-                <h2 class="experiencia__sobre___titulo">Consulta CEP e Rastreador Correios</h2>
-                <h3 class="experiencia__sobre___descricao">Rastreia encomendas (Python + Flask)</h3>
-                <ul class="experiencia__sobre__lista">
-                    <li class="experiencia__sobre___itens"><a class="experiencia__link--repo" href="https://github.com/danielbecher/PythonFlask"><button class="experiencia__botao--repo">Repositório</button></a></li>
-                    <li class="experiencia__sobre___itens"><a class="experiencia__link--demo" href="https://tkcorreios.herokuapp.com/"><button class="experiencia__botao--demo">Ver demo</button></a></li>
-                </ul>
-            </div>
-        </div>   
-        <div class="experiencia">
-            <div class="experiencia__sobre">
-                <h2 class="experiencia__sobre___titulo">Acerte o Alvo</h2>
-                <h3 class="experiencia__sobre___descricao">Jogo feito em Javascript</h3>
-                <ul class="experiencia__sobre__lista">
-                    <li class="experiencia__sobre___itens"><a class="experiencia__link--repo" href="https://github.com/danielbecher/danielbecher.github.io/tree/main/acerteoalvo"><button class="experiencia__botao--repo">Repositório</button></a></li>
-                    <li class="experiencia__sobre___itens"><a class="experiencia__link--demo" href="https://danielbecher.github.io/acerteoalvo/"><button class="experiencia__botao--demo">Ver demo</button></a></li>
-                </ul>
-            </div>
-            <img class="experiencia__imagem" src="./assets/img/acerte-o-alvo.jpg">
-        </div>
+    <script type="text/javascript" src="assets/js/jQuery.js"></script>
+    <script type="text/javascript" src="assets/js/home.js"></script>
 
-    </section>
-
-    <section class="formcontato">
-        <div id="contato" class="contato">
-            <div class="contato__redes">
-                <h3 class="contato__subtitulo">Você também pode manter contato aqui:</h3>
-                <ul class="contato__redes--lista">
-                    <li class="contato__redes--item"><a href="https://www.linkedin.com/in/danielbecher/"><img class="contato__imagem" src="./assets/img/linkedin.png"></a></li>
-                    <li class="contato__redes--item"><a href="https://github.com/danielbecher"><img class="contato__imagem" src="./assets/img/github.png"></a>"</li>
-                    <li class="contato__redes--item"><a href="https://instagram.com/daniel.becher"><img class="contato__imagem" src="./assets/img/instagram.png"></a></li>
-                    <li class="contato__redes--item"><a href="https://twitter.com/becher"><img class="contato__imagem" src="./assets/img/twitter.png"></a></li>
-                    <li class="contato__redes--item"><a href="https://www.facebook.com/odanielbecher/"><img class="contato__imagem" src="./assets/img/facebook.png"></a></li>
-                </ul>
-            </div>
-            <div class="contato__sobre">
-                <h2 class="contato__titulo">Contato</h2>
-                <form action="#" class="formulario">
-                        <div class="input-container">
-                            <input class="contato__input" type="text" name="nome" id="nome" placeholder="Nome" data-tipo="nome">
-                        </div>
-                           <div class="input-container">
-                           <input class="contato__input" type="text" name="email" id="email" placeholder="E-mail" data-tipo="email">
-                        </div>
-                          <div class="input-container">
-                          <input class="contato__input" type="text" name="assunto" id="assunto" placeholder="Assunto" data-tipo="assunto">     
-                        </div>
-                          <div class="input-container">
-                          <textarea class="contato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem" data-tipo="mensagem"></textarea>
-                        </div>
-                        <button class="contato__botao" name="enviar" disabled="True">Enviar mensagem</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <section class="footer">
-        <div class="rodape">
-            <p>Desenvolvido por <a href="https://danielbecher.github.io">Daniel Becher</a> com a ajuda de uma equipe foda da <a href="https://www.alura.com.br"> Alura!</a></p>
-            <p>2022</p>
-        </div>
-    </section>
-    <script src="assets/js/valida.js" type="module"></script>
 </body>
 </html>
