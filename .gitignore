@@ -128,3 +128,10 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+v2/assets/sass/style.css.map
+v2/assets/sass/style.css.map
+v2/.sass-cache/0e60ec8017d52fc79fca34cde79172788dd4b2e4/style (1).scssc
+v2/.sass-cache/0e60ec8017d52fc79fca34cde79172788dd4b2e4/style (2).scssc
+v2/.sass-cache/0e60ec8017d52fc79fca34cde79172788dd4b2e4/style.scssc
+package-lock.json
+package.json
