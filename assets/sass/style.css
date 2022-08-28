@@ -1,22 +1,21 @@
-@charset "UTF-8";
-/* CSS Custom */
-/* Estilização de Fonts Awesome */
+/* Estilos para Desktop > 768px */
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #3F39AC; }
-  body .container {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 0;
-    width: 800px;
-    border: 1px solid #000;
-    border-radius: 12px;
-    padding: 10px;
-    padding: 30px 30px; }
+  background-color: #3F39AC;
+}
+body .container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 0;
+  width: 800px;
+  border: 1px solid #000;
+  border-radius: 12px;
+  padding: 10px;
+  padding: 30px 30px;
+}
 
 header nav ul {
   background-color: #F9F7FC;
@@ -26,49 +25,60 @@ header nav ul {
   list-style: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-around; }
+  justify-content: space-around;
+}
 header nav li a {
   text-decoration: none;
   color: #514acd;
-  font-weight: 700; }
-  header nav li a:hover {
-    color: #0F192E;
-    font-weight: 600;
-    text-decoration: underline; }
+  font-weight: 700;
+}
+header nav li a:hover {
+  color: #0F192E;
+  font-weight: 600;
+  text-decoration: underline;
+}
 
 main .main__box {
   margin: 40px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: center; }
-  main .main__box img {
-    width: 150px; }
-  main .main__box h2 {
-    font-size: 30px;
-    font-weight: 700;
-    text-transform: uppercase; }
+  align-items: center;
+}
+main .main__box img {
+  width: 150px;
+}
+main .main__box h2 {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 main .main__box:nth-child(2) {
   display: flex;
   flex-direction: row;
-  justify-content: space-around; }
+  justify-content: space-around;
+}
 main .main__subox-icons {
   margin-top: 30px;
-  width: 60%; }
-  main .main__subox-icons ul {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center; }
-    main .main__subox-icons ul li {
-      margin-right: 10px;
-      list-style: none; }
-      main .main__subox-icons ul li img {
-        width: 30px;
-        height: 30px; }
+  width: 60%;
+}
+main .main__subox-icons ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+main .main__subox-icons ul li {
+  margin-right: 10px;
+  list-style: none;
+}
+main .main__subox-icons ul li img {
+  width: 30px;
+  height: 30px;
+}
 
 footer .botao-zap {
   position: absolute;
@@ -76,12 +86,12 @@ footer .botao-zap {
   height: 50px;
   right: -10px;
   bottom: -10px;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   width: 50px;
-  height: 50px; }
-  footer .botao-zap:hover {
-    width: 80px;
-    height: 80px;
-    transition: all .5s ease-in-out; }
-
-/*# sourceMappingURL=style.css.map */
+  height: 50px;
+}
+footer .botao-zap:hover {
+  width: 80px;
+  height: 80px;
+  transition: all 0.5s ease-in-out;
+}/*# sourceMappingURL=style.css.map */
