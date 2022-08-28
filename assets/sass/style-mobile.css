@@ -1,0 +1,45 @@
+/* Estilos para Mobile < 768px */
+@media (max-width: 768px) {
+  body .container {
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 80%;
+    padding: 0;
+    padding: 30px 30px;
+    position: relative;
+    top: initial;
+    left: initial;
+    transform: none;
+  }
+  header nav li a {
+    font-size: 12px;
+  }
+  main .main__box {
+    margin: 20px 0;
+  }
+  main .main__box img {
+    width: 100px;
+  }
+  main .main__box h2 {
+    font-size: 15px;
+  }
+  main .main__subox-icons {
+    width: 70%;
+  }
+  main .main__subox-icons ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+  main .main__subox-icons ul li {
+    margin-right: 10px;
+    list-style: none;
+  }
+  main .main__subox-icons ul li img {
+    width: 25px;
+    height: 25px;
+  }
+}/*# sourceMappingURL=style-mobile.css.map */
