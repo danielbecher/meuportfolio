@@ -1,0 +1,42 @@
+.main__subox h2 {
+  text-transform: initial !important;
+}
+
+.assuntoPesquisa {
+  height: 20px;
+  border: 1px #ccc solid;
+  padding: 10px;
+}
+
+.botaoPesquisa {
+  height: 40px;
+  border: 1px #ccc solid;
+  padding: 10px;
+}
+
+.main__box {
+  flex-direction: column !important;
+}
+
+.main__subox {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column !important;
+}
+.main__subox .main__form {
+  flex-direction: row !important;
+}
+
+.main__news {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.main__news ul {
+  list-style: none;
+  padding: 2px;
+}
+.main__news ul li {
+  padding: 2px;
+}/*# sourceMappingURL=style-pesquisa.css.map */
