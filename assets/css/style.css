@@ -1,121 +1,121 @@
-/* Estilos para Desktop > 768px */
-body {
-  font-family: "Poppins", sans-serif;
-  background-color: #3F39AC;
-}
-body .container {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  padding: 0;
-  width: 800px;
-  border: 1px solid #000;
-  border-radius: 12px;
-  padding: 10px;
-  padding: 30px 30px;
-}
+  /* Reset básico */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-header nav ul {
-  background-color: #F9F7FC;
-  border: 1px solid #CFCDEE;
-  border-radius: 12px;
-  padding: 10px 0;
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-header nav li a {
-  text-decoration: none;
-  color: #514acd;
-  font-weight: 700;
-}
-header .header__nav li:hover {
-  text-decoration: none;
-}
-header .header__nav li:hover:after {
-  display: block;
-}
-header .header__nav li:after {
-  content: "";
-  transition: left, 0.3s;
-  display: none;
-  width: 100%;
-  background-color: #1d1885;
-  border-bottom: 1px solid #1d1885;
-}
-header .header__nav-hasub:hover .header__nav-sub {
-  display: block;
-}
-header .header__nav-sub {
-  display: none;
-  position: absolute;
-  width: 150px;
-  height: auto;
-  border: 1px solid #ccc;
-  border-radius: none;
-}
-header .header__nav-sub ul {
-  border: none;
-  border-radius: 0;
-}
+  /* Variáveis para customização */
+  :root {
+    --azul-claro: #00aaff;
+    --azul-escuro: #0066ff;
+    --branco: #fff;
+    --texto: #333;
+    --texto-secundario: #666;
+    --footer: #777;
+  }
 
-main .main__box {
-  margin: 40px 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
-main .main__box img {
-  width: 150px;
-}
-main .main__box h2 {
-  font-size: 30px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-main .main__box:nth-child(2) {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-main .main__subox-icons {
-  margin-top: 30px;
-  width: 60%;
-}
-main .main__subox-icons ul {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-}
-main .main__subox-icons ul li {
-  margin-right: 10px;
-  list-style: none;
-}
-main .main__subox-icons ul li img {
-  width: 30px;
-  height: 30px;
-}
+  /* Fundo com degradê moderno */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, var(--azul-claro), var(--azul-escuro));
+    color: var(--texto);
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-footer .botao-zap {
-  position: absolute;
-  cursor: pointer;
-  height: 50px;
-  right: -10px;
-  bottom: -10px;
-  transition: all 0.2s ease-in-out;
-  width: 50px;
-  height: 50px;
-}
-footer .botao-zap:hover {
-  width: 80px;
-  height: 80px;
-  transition: all 0.5s ease-in-out;
-}/*# sourceMappingURL=style.css.map */
+  /* Container centralizado */
+  .container {
+    background-color: var(--branco);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: var(--azul-escuro);
+  }
+
+  header p {
+    font-size: 1.2rem;
+    color: var(--texto-secundario);
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  nav li {
+    flex: 1;
+    min-width: 120px;
+    text-align: center;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: var(--branco);
+    background: var(--azul-escuro);
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    display: block;
+  }
+
+  nav a:hover {
+    background: var(--azul-claro);
+  }
+
+  main h2 {
+    margin-bottom: 15px;
+    color: var(--azul-escuro);
+  }
+
+  .foto {
+    width: 100px;
+    margin: 20px 0;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: var(--footer);
+  }
+
+  /* Ajustes para mobile */
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 2rem;
+    }
+
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    nav li {
+      width: 100%;
+    }
+
+    .container {
+      padding: 15px;
+    }
+  }
