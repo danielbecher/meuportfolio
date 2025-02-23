@@ -32,10 +32,34 @@ header nav li a {
   color: #514acd;
   font-weight: 700;
 }
-header nav li a:hover {
-  color: #0F192E;
-  font-weight: 600;
-  text-decoration: underline;
+header .header__nav li:hover {
+  text-decoration: none;
+}
+header .header__nav li:hover:after {
+  display: block;
+}
+header .header__nav li:after {
+  content: "";
+  transition: left, 0.3s;
+  display: none;
+  width: 100%;
+  background-color: #1d1885;
+  border-bottom: 1px solid #1d1885;
+}
+header .header__nav-hasub:hover .header__nav-sub {
+  display: block;
+}
+header .header__nav-sub {
+  display: none;
+  position: absolute;
+  width: 150px;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: none;
+}
+header .header__nav-sub ul {
+  border: none;
+  border-radius: 0;
 }
 
 main .main__box {
